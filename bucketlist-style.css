@@ -1,0 +1,17 @@
+body {
+  background-color: bisque;
+}
+
+dd {
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul > li {
+  color: darkseagreen;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+marquee {
+  color: red;
+}
