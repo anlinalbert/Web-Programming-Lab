@@ -1,0 +1,27 @@
+body {
+  background-image: repeating-linear-gradient(pink, lightblue);
+  height: 600px;
+}
+
+.grid-container {
+  border-left: 1px dashed #666;
+  border-right: 1px dashed #666;
+  font-size: 0;
+  text-align: justify;
+}
+
+.grid-container::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.grid-item {
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  background: rgb(127, 226, 213);
+  padding: 30px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
