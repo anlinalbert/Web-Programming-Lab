@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src=""></script>
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Form Validate</title>
+
+    <script src="formvalidation.js"></script>
 </head>
 
-<body bgcolor="lightgreen">
-    <u>
-        <center>
-            <h1>Form Validation</h1>
-        </center>
-    </u>
-    <form action="" method="GET">
-        Name : <input type="text" name="" id="">
-        <br><br>Gender<br>
-        <input type="radio" name="gender" id="radio_gen_m">Male
-        <br><input type="radio" name="gender" id="radio_gen_f">Female
-        <br><br>DOB : <input type="date" name="" id="">
-        <br><br>Phone : <input type="number" name="" id="">
-        <br><br><input type="button" value="Submit">
+<body>
+    <form method="POST">
+        <h2>
+            <u><center>Form Validation</center></u>
+        </h2>
+        <table>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text" name="" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="radio_gen_m">Male</td>
+            </tr>
+            <tr>
+                <td>
+                <td><input type="radio" name="gender" id="radio_gen_f">Female</td>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="myemail" required></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" id="dob" required></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" id="phone" required></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="hello" name="submit" onclick="validate()"></td>
+            </tr>
+        </table>
     </form>
 </body>
 
