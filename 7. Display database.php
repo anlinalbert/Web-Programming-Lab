@@ -1,3 +1,5 @@
+<!-- This is a php file so open with xampp in htdocs. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
