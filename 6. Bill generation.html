@@ -1,0 +1,105 @@
+<!-- generate a bill -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order page</title>
+
+    <link rel="stylesheet" href="billgeneration.css">
+    <script src="billgeneration.js"></script>
+</head>
+
+<body>
+    <form method="POST"></form>
+        <table>
+            <center>
+                <h2><br>TAPHOUSE</h2>
+            </center>
+            <hr>
+            
+                <tr>
+                    <td>
+                        <h4>Drafts</h4>
+                    </td>
+                </tr>
+                <p>
+                    <tr>
+                        <td>Coors Light (Rs 200) </td>
+                        <td><input type="checkbox" value="200" name="product" onclick="order()"></td>
+                    </tr>
+                    <tr>
+                        <td>Budweiser (Rs 400)</td>
+                        <td><input type="checkbox" value="400" name="product" onclick="order()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bud Light (Rs 350)</td>
+                        <td> <input type="checkbox" value="350" name="product" onclick="order()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Blue Ribbon (Rs 100)</td>
+                        <td> <input type="checkbox" value="100" name="product" onclick="order()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            MGD (Rs 200)</td>
+                        <td> <input type="checkbox" value="200" name="product" onclick="order()"></td>
+                    </tr>
+                </p>
+                <tr>
+                    <td>
+                        <h4>Imported Drafts</h4>
+                    </td>
+                </tr>
+                <p>
+                    <tr>
+                        <td>
+                            Guiness Stout (Rs 500)</td>
+                        <td><input type="checkbox" value="500" name="product" onclick="order()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Belgian White (Rs 1000)
+                        <td><input type="checkbox" value="1000" name="product" onclick="order()"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Smith Nut Brown (Rs 700)
+                        <td><input type="checkbox" value="700" name="product" onclick="order()"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Doppelback (Rs 800)
+                        <td><input type="checkbox" value="800" name="product" onclick="order()"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Framboise (Rs 600)
+                        <td><input type="checkbox" value="600" name="product" onclick="order()"></td>
+                        </td>
+                    </tr>
+                </p>
+                <tr>
+                    <td></td>
+                </tr>
+                <hr>
+                <div class="verticalLine"></div>
+
+            
+            </table>
+        <br><br><br>
+        <input value="Rs 0.00" readonly="readonly" type="text" id="total"/>
+        <input type="button" value="Order" onclick="buy()">
+    </form>
+    <img src="drinks.jpg" alt="">
+</body>
+
+</html>
