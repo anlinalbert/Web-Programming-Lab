@@ -4,6 +4,7 @@ function formValidation() {
     var uname = document.registration.username;
     var uadd = document.registration.address;
     var ucountry = document.registration.country;
+    var uage = document.registration.age;
     var uzip = document.registration.zip;
     var uphone = document.registration.phone;
     var uemail = document.registration.email;
@@ -15,10 +16,12 @@ function formValidation() {
             if(allLetter(uname)) {
                 if(alphanumeric(uadd)) {
                     if(countryselect(ucountry)) {
-                        if(allnumeric(uzip)) {
-                            if(ValidatePhone(uphone)) 
-                                if(ValidateEmail(uemail)) {
-                                    if(validsex(umsex,ufsex)) {}
+                        if(ValidateAge(uage)) {
+                            if(allnumeric(uzip)) {
+                                if(ValidatePhone(uphone)) 
+                                    if(ValidateEmail(uemail)) {
+                                        if(validsex(umsex,ufsex)) {}
+                                }
                             }
                         }
                     }
@@ -85,8 +88,20 @@ function countryselect(ucountry) {
         return true;
 }
 
-function allnumeric(uzip) { 
+function ValidateAge(uage) {
     var numbers = /^[0-9]+$/;
+
+    if(uage.value.match(numbers) && (uage.value >= 20 && uage.value <= 25))
+        return true;
+    else {
+        alert('Age must be between 20-25 and numeric');
+        uage.focus();
+        return false;
+    }
+}
+
+function allnumeric(uzip) { 
+    var numbers = /^[1-9]?[0-9]{1}$|^100$/;
     if(uzip.value.match(numbers))
         return true;
     else {
