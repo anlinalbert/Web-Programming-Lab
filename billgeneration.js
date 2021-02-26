@@ -18,5 +18,10 @@ function buy() {
           total += parseFloat(input[i].value);
     }
 
-    alert("Ordered successfully. Total cost = Rs " + total);
+    if(total == 0)
+      alert('No items selected to order.')
+    else {
+      alert("Ordered successfully. Total cost = Rs " + total);
+      window.location.reload();
+    }
 }
