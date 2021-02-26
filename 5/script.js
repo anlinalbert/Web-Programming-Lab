@@ -101,7 +101,7 @@ function ValidateAge(uage) {
 }
 
 function allnumeric(uzip) { 
-    var numbers = /^[1-9]?[0-9]{1}$|^100$/;
+    var numbers = /^[0-9]+$/;
     if(uzip.value.match(numbers))
         return true;
     else {
@@ -145,6 +145,10 @@ function validsex(umsex,ufsex) {
         x++; 
     if(x==0) {
         alert('Select Male/Female');
+        umsex.focus();
+        return false;
+    } else if(x == 2) {
+        alert('Cannot be of both sex');
         umsex.focus();
         return false;
     }
