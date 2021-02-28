@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form method="POST">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>TAPHOUSE</h1>
+                <p>Eat healthy, Think better.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Drafts</h3>
+                    <p>
+                        Coors Light (Rs 200)
+                        <input type="text" name="" id="" placeholder="qty">
+                        <input type="checkbox" name="product" value="200" onclick="order()">
+                    </p>
+                    <p>
+                        Budweiser (Rs 400)
+                        <input type="text" name="" id="" placeholder="qty">
+                        <input type="checkbox" name="product" value="400" onclick="order()">
+                    </p>
+                    <p>
+                        Blue Ribbon (Rs 100)
+                        <input type="text" name="" id="" placeholder="qty">
+                        <input type="checkbox" name="product" value="100" onclick="order()">
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Imported Drafts</h3>
+                    <p>
+                        Guiness Stout (Rs 500)
+                        <input type="text" name="" id="" placeholder="qty">
+                        <input type="checkbox" name="product" value="500" onclick="order()">
+                    </p>
+                    <p>
+                        Belgian White (Rs 1000)
+                        <input type="text" name="" id="" placeholder="qty">
+                        <input type="checkbox" name="product" value="1000" onclick="order()">
+                    </p>
+                    <p>
+                        Smith Nut Brown (Rs 700)
+                        <input type="text" name="" id="" placeholder="qty">
+                        <input type="checkbox" name="product" value="700" onclick="order()">
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Total</h3>
+                    <p>
+                        <input value="Rs 0.00" readonly="readonly" type="text" id="total">
+                    </p>
+                    <p>
+                        <input type="button" value="Order" onclick="buy()">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
